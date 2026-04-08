@@ -1,0 +1,37 @@
+# 依赖目录（非常重要）
+node_modules/
+
+# VitePress 专属忽略（官方强烈推荐）
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+
+# 如果你的文档文件夹不是 docs，而是其他名字（如 .vitepress 在根目录），请相应修改
+# 例如：.vitepress/cache/ 和 .vitepress/dist/
+
+# 日志和临时文件
+*.log
+.DS_Store
+Thumbs.db
+
+# 编辑器和 IDE 临时文件
+.vscode/.history
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 构建和缓存
+dist/
+.cache/
+temp/
+
+# pnpm 特有（如果你使用 pnpm）
+pnpm-debug.log*
+# .pnpm-store/   # 一般不需要忽略，除非你有特殊需求
+
+# 可选：如果不想提交 lock 文件（不推荐，新手建议提交）
+# pnpm-lock.yaml
+# package-lock.json
+# yarn.lock
