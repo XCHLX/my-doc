@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "My DOC"
+  name: "My DOC XCHLX"
   text: "个人文档"
   tagline: My great project tagline
   actions:
