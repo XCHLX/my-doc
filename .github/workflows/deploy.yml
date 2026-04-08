@@ -1,9 +1,8 @@
-# .github/workflows/deploy.yml
 name: Deploy VitePress site to GitHub Pages
 
 on:
   push:
-    branches: [ master ]        # 如果你的默认分支是 master，请改成 master
+    branches: [ master ]          # 如果你的默认分支是 master，请改成 master
   workflow_dispatch:
 
 permissions:
@@ -24,23 +23,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      # === pnpm 专用设置（必须添加）===
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v5        # ← 更新到 v5（最新）
         with:
-          version: 10          # 或 9，根据你的本地 pnpm 版本
+          version: 10
 
       - name: Setup Node
         uses: actions/setup-node@v6
         with:
           node-version: 24
-          cache: 'pnpm'        # 关键：改成 pnpm
+          cache: 'pnpm'
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5   # ← 更新到 v5（最新）
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile   # 使用 --frozen-lockfile 更安全
+        run: pnpm install --frozen-lockfile
 
       - name: Build with VitePress
         run: pnpm run docs:build
