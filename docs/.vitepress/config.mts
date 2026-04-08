@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "My DOC",
   description: "个人文档",
-  base: '/repo/',
+  base: '/my-doc/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
