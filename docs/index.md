@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "My DOC XCHLX"
-  text: "个人文档"
+  name: "My DOC"
+  text: "A VitePress Site"
   tagline: My great project tagline
   actions:
     - theme: brand

@@ -4,7 +4,8 @@ node_modules/
 # VitePress 专属忽略（官方强烈推荐）
 docs/.vitepress/cache/
 docs/.vitepress/dist/
-
+cache/
+dist/
 # 如果你的文档文件夹不是 docs，而是其他名字（如 .vitepress 在根目录），请相应修改
 # 例如：.vitepress/cache/ 和 .vitepress/dist/
 
