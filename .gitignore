@@ -36,3 +36,10 @@ pnpm-debug.log*
 # pnpm-lock.yaml
 # package-lock.json
 # yarn.lock
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
